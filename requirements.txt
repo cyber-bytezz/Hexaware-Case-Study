@@ -1,0 +1,19 @@
+EmployeManagement/
+│── main.py                          # Main entry point (runs the program)This is the main script where the program starts. It creates a company object, adds employees, calls service methods, and prints the sorted employee list. It also handles exceptions when searching for employees
+│── company/                          # Core logic of the application
+│   ├── __init__.py                  # Marks this folder as a package
+│   ├── company.py                    # Defines the Company class (Container) (This file defines the Company class, which acts as a container for employees. It has methods to store and retrieve employees.)
+│   ├── employee.py                   # Defines Employee and its subclasses (This file defines the different employee types. Employee is the base class, and Developer, Tester, and Manager extend it with extra attributes.)
+│   ├── exceptions.py                 # Custom exception handling (EmployeeNotFoundException) ("If an employee is not found during a search, this exception is raised.)
+│   ├── service.py                    # Abstract class (defines what services are needed) (This is an abstract class that enforces a structured design by defining methods that must be implemented in service_impl.py.)
+│   ├── service_impl.py               # Implements service methods (This file contains the core business logic. It adds employees, sorts them, searches employees, and handles filtering operations.)
+│── tests/                            # Unit tests to check if the code is working correctly
+│   ├── __init__.py                   # Marks this folder as a package
+│   ├── test_company.py               # Tests company functionalities (Tests employee adding, searching, and sorting)
+│   ├── test_employee.py              # Tests employee classes (Tests salary calculations)
+│── .venv/                            # Python virtual environment (do not modify)
+│── External Libraries/               # Installed dependencies (handled by PyCharm)
+│── Scratches and Consoles/           # Temporary files used by PyCharm
+
+
+Run the Unit Test -> python -m unittest discover tests (Pass)
