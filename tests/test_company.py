@@ -1,8 +1,8 @@
 import unittest
-from company.company import Company
-from company.employee import Developer, Tester, Manager
-from company.service_impl import CompanyServiceProviderImpl
-from company.exceptions import EmployeeNotFoundException
+from entities.company import Company
+from entities.employee import Developer, Tester, Manager
+from services.service_impl import CompanyServiceProviderImpl
+from customerror.exceptions import EmployeeNotFoundException
 
 class TestCompany(unittest.TestCase):
 

@@ -1,9 +1,9 @@
 import logging
-from company.company import Company
-from company.employee import Developer, Tester, Manager
-from company.service_impl import CompanyServiceProviderImpl
+from entities.company import Company
+from entities.employee import Developer, Tester, Manager
+from services.service_impl import CompanyServiceProviderImpl
 
-# Allows DEBUG messages to appear
+# Configure logging
 logging.basicConfig(level=logging.DEBUG)
 
 company = Company("Hexaware")
@@ -17,8 +17,7 @@ service.add_employee(dev)
 service.add_employee(tester)
 service.add_employee(manager)
 
-# Print sorted employee list in readable format
 sorted_employees = service.return_sorted_list()
 print("\n🔹 Sorted Employees by Salary (Descending):")
 for emp in sorted_employees:
-    print(emp)  # This will use the __str__ method of each class
+    print(emp)

@@ -7,13 +7,19 @@ EmployeManagement/
 │   ├── exceptions.py                 # Custom exception handling (EmployeeNotFoundException) ("If an employee is not found during a search, this exception is raised.)
 │   ├── service.py                    # Abstract class (defines what services are needed) (This is an abstract class that enforces a structured design by defining methods that must be implemented in service_impl.py.)
 │   ├── service_impl.py               # Implements service methods (This file contains the core business logic. It adds employees, sorts them, searches employees, and handles filtering operations.)
-│── tests/                            # Unit tests to check if the code is working correctly
-│   ├── __init__.py                   # Marks this folder as a package
-│   ├── test_company.py               # Tests company functionalities (Tests employee adding, searching, and sorting)
-│   ├── test_employee.py              # Tests employee classes (Tests salary calculations)
-│── .venv/                            # Python virtual environment (do not modify)
-│── External Libraries/               # Installed dependencies (handled by PyCharm)
-│── Scratches and Consoles/           # Temporary files used by PyCharm
+
 
 
 Run the Unit Test -> python -m unittest discover tests (Pass)
+
+Proper Folder Structure (company/, exceptions.py, service.py, main.py)
+
+Employee Class & Subclasses (Developer, Tester, Manager)
+Company Class (Aggregation of Employees)
+Abstract Service Class (ICompanyServiceProvider)
+Service Implementation (CompanyServiceProviderImpl)
+Sorting & Filtering Functions (Salary, Selenium, UFT, Managers, etc.)
+Custom Exception (EmployeeNotFoundException)
+Logging at INFO Level
+No Extra Business Logic in Entity Classes
+Only main.py Handles Input/Output

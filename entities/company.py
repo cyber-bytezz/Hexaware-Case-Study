@@ -1,6 +1,5 @@
 class Company:
     """Represents a company with multiple employees."""
-
     def __init__(self, name):
         self.name = name
         self.employees = []

@@ -1,5 +1,5 @@
 import unittest
-from company.employee import Developer, Tester, Manager
+from entities.employee import Developer, Tester, Manager
 
 class TestEmployee(unittest.TestCase):
 
