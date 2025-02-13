@@ -97,31 +97,6 @@ Implements all methods from `ICompanyServiceProvider`:
 - Logs key **business operations** like adding employees, sorting, and searching.  
 - Helps in debugging and **tracking application flow**.  
 
----
-
-## 🏃‍♂️ **How to Run the Project**
-### **🔹 Step 1: Clone the Repository**
-```sh
-git clone https://github.com/yourusername/employe-management.git
-cd employe-management
-```
-
-### **🔹 Step 2: Create a Virtual Environment & Install Dependencies**
-```sh
-python -m venv venv
-source venv/bin/activate   # For macOS/Linux
-venv\Scripts\activate      # For Windows
-
-pip install -r requirements.txt
-```
-
-### **🔹 Step 3: Run the Application**
-```sh
-python main.py
-```
-
----
-
 ## 📌 **Expected Output**
 ```sh
 🔹 Sorted Employees by Salary (Descending):
